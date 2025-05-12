@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.49f37042.css",
+    "main.js": "/portfolio/static/js/main.d95d9025.js",
+    "static/media/me.png": "/portfolio/static/media/me.821ecddcb9953b46bf75.png",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.5b96aacbfd0f73f929e6.pdf",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.ec2ff65aab60f03923ce.png",
+    "static/media/influencer_hero1.png": "/portfolio/static/media/influencer_hero1.15b9dac240eabe3b7d82.png",
+    "static/media/buybunk1.png": "/portfolio/static/media/buybunk1.093ec9ec48c0ae5bb78b.png",
+    "static/media/redux-saga.png": "/portfolio/static/media/redux-saga.9f1ea10ade615bc4f828.png",
+    "static/media/ME.jpg": "/portfolio/static/media/ME.f847f1625f042795ac66.jpg",
+    "static/media/bitbucket.png": "/portfolio/static/media/bitbucket.cb3087172410ed0b7ec3.png",
+    "static/media/gitlab.png": "/portfolio/static/media/gitlab.5eabb046436f4254ee85.png",
+    "static/media/figma.png": "/portfolio/static/media/figma.d6ee3863a2c3debce3a8.png",
+    "static/media/ts.png": "/portfolio/static/media/ts.62fa1ef0511c8c4991a4.png",
+    "static/media/ant-design.svg": "/portfolio/static/media/ant-design.0aa992f997421683296276fa7b256e94.svg",
+    "static/media/html5.svg": "/portfolio/static/media/html5.e248da514edac2a2a66bde8fa0166701.svg",
+    "index.html": "/portfolio/index.html",
+    "main.49f37042.css.map": "/portfolio/static/css/main.49f37042.css.map",
+    "main.d95d9025.js.map": "/portfolio/static/js/main.d95d9025.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49f37042.css",
+    "static/js/main.d95d9025.js"
+  ]
+}

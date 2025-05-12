@@ -1,0 +1,87 @@
+/* src/styles/skills.scss */
+.skills {
+  position: relative;
+  //background: #0d1117;
+  color: #fff;
+  padding: 0 0 1rem 0;
+  overflow: hidden;
+  margin-top: 0!important;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  //background: radial-gradient(circle at center, rgba(43,86,197,0.4), transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.skills__content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills__title {
+  margin: 0;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #ff3cac, #784ba0, #2b86c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills__desc {
+  margin-top: 1rem;
+  font-size: 2.125rem;
+  text-align: center;
+  color: #8b949e;
+}
+
+.skills__circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.skills__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skills__img-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.skills__img-icon-saga {
+  width: 92px;
+  height: 56px;
+}
+
+.skills__icon {
+  width: 114px;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  font-size: 3.5rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+  /* колір задається inline через style */
+}
+
+.skills__icon:hover {
+  transform: scale(1.2) rotate(-5deg);
+  background: rgba(43,134,197,0.2);
+  /* більше не змінюємо колір самої іконки */
+}

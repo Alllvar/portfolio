@@ -2,13 +2,13 @@ import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/influencer_hero1.png";
 import IMG2 from "../../assets/buybunk1.png";
-import IMG3 from "../../assets/portfolio.png";
+import IMG3 from "../../assets/blib.png";
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
+      <h5>My Recent Work</h5>
+      <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
         <article className="portfolio__item">
@@ -42,11 +42,12 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={IMG3} alt="" />
           </div>
-          <h3>Project: My Portfolio</h3>
+          <h3>Blip: Batch Upload 100s of Facebook &amp; Instagram Ads</h3>
           <div className="portfolio__item-cta">
             <a
-                href="#"
+                href="https://alllvar.github.io/blib/"
                 className="btn btn-primary"
+                target="_blank"
             >
               Open website
             </a>

@@ -1,59 +1,17 @@
-.contact__container {
-  width: 58%;
-  display: grid;
-  grid-template-columns: 30% 58%;
-  gap: 12%;
+#contact {
+  position: relative;
+  padding: 4rem 0;
+  text-align: center;
 }
 
-.contact__options {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-.contact__option {
-  background: var(--color-bg-variant);
-  text-align: center;
-  padding: 1.2rem;
-  border-radius: 1.2rem;
-  border: 1px solid transparent;
-  transition: var(--transition);
-}
-.contact__option:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
-}
-.contact__option-icon {
-  font-size: 1.5rem;
+#contact h5 {
+  text-transform: uppercase;
+  color: var(--color-light);
   margin-bottom: 0.5rem;
 }
 
-.contact__option a {
-  margin-top: 0.7rem;
-  display: inline-block;
-  font-size: 0.8rem;
-}
-
-/* ==========form=================== */
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  background: transparent;
-  border: 2px solid var(--color-primary-variant);
-  resize: none;
-  color: var(--color-white);
-}
-
-#contact {
-  position: relative;
+#contact h2 {
+  margin-bottom: 2rem;
 }
 
 .contact__success {
@@ -61,26 +19,126 @@ textarea {
   top: 3.6rem;
   left: 50%;
   transform: translateX(-50%);
-  /*background: var(--color-bg-variant);*/
   color: var(--color-primary);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   z-index: 10;
 }
 
-/* ======media queries for tablets(medium devices) =========*/
+/* Контейнер: ліворуч соціалки, праворуч форма */
+.contact__container {
+  width: 58%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
 
+/* ========== Сітка контактних опцій ========== */
+.contact__options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Карточка опції */
+.contact__option {
+  background: var(--color-bg-variant);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: var(--transition);
+  padding: 1rem;
+  min-height: 5.5rem;
+}
+
+.contact__option:hover {
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* Лінк охоплює весь блок */
+.contact__option-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Іконка */
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Заголовки */
+.contact__option h4 {
+  margin: 0.2rem 0;
+}
+
+.contact__option h5 {
+  font-size: 0.85rem;
+  color: var(--color-light);
+}
+
+/* Дія */
+.contact__option-action {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* ========== Форма ========== */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-white);
+}
+
+/* Submit */
+.contact__form button {
+  align-self: flex-start;
+  padding: 0.8rem 1.2rem;
+}
+
+/* ===== Адаптивність ===== */
 @media screen and (max-width: 1024px) {
+  /* Збираємо весь контейнер в одну колонку */
   .contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
 
-/* ======media queries for mobile(small devices) =========*/
+@media screen and (max-width: 768px) {
+  /* На планшетах опції — також в одну колонку для зручності */
+  .contact__options {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .contact__container {
     width: var(--container-width-sm);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__container {
+    /* Замість 30% 58% ставимо 35% 53% (сума = 88%, + gap 12%) */
+    grid-template-columns: 45% 50%;
   }
 }

@@ -60,7 +60,9 @@ const rowCounts = [7, 8, 7];
 const Skills = () => {
     let start = 0;
     return (
-        <section id="skills" className="skills">
+        <section id="experience" className="skills">
+            <h5>What Skills I Have</h5>
+            <h2>My Experience</h2>
             <div className="skills__content container">
                 <div className="skills__circle">
                     {rowCounts.map((count, row) => {

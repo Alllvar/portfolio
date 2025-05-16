@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.49f37042.css",
-    "main.js": "/portfolio/static/js/main.d95d9025.js",
-    "static/media/me.png": "/portfolio/static/media/me.821ecddcb9953b46bf75.png",
+    "main.css": "/portfolio/static/css/main.f9fb6b0e.css",
+    "main.js": "/portfolio/static/js/main.293b8fa9.js",
     "static/media/cv.pdf": "/portfolio/static/media/cv.5b96aacbfd0f73f929e6.pdf",
-    "static/media/portfolio.png": "/portfolio/static/media/portfolio.ec2ff65aab60f03923ce.png",
+    "static/media/blib.png": "/portfolio/static/media/blib.fc12e92950eaa931ef6e.png",
     "static/media/influencer_hero1.png": "/portfolio/static/media/influencer_hero1.15b9dac240eabe3b7d82.png",
     "static/media/buybunk1.png": "/portfolio/static/media/buybunk1.093ec9ec48c0ae5bb78b.png",
     "static/media/redux-saga.png": "/portfolio/static/media/redux-saga.9f1ea10ade615bc4f828.png",
@@ -16,11 +15,11 @@
     "static/media/ant-design.svg": "/portfolio/static/media/ant-design.0aa992f997421683296276fa7b256e94.svg",
     "static/media/html5.svg": "/portfolio/static/media/html5.e248da514edac2a2a66bde8fa0166701.svg",
     "index.html": "/portfolio/index.html",
-    "main.49f37042.css.map": "/portfolio/static/css/main.49f37042.css.map",
-    "main.d95d9025.js.map": "/portfolio/static/js/main.d95d9025.js.map"
+    "main.f9fb6b0e.css.map": "/portfolio/static/css/main.f9fb6b0e.css.map",
+    "main.293b8fa9.js.map": "/portfolio/static/js/main.293b8fa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.49f37042.css",
-    "static/js/main.d95d9025.js"
+    "static/css/main.f9fb6b0e.css",
+    "static/js/main.293b8fa9.js"
   ]
 }

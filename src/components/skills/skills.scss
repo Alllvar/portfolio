@@ -1,11 +1,9 @@
-/* src/styles/skills.scss */
 .skills {
   position: relative;
-  //background: #0d1117;
   color: #fff;
-  padding: 8rem 0 1rem 0;
-  overflow: hidden;
-  margin-top: 0!important;
+  padding: 8rem 0 1rem;
+  overflow: visible;
+  margin-top: 0 !important;
 }
 
 .skills::before {
@@ -13,7 +11,6 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  //background: radial-gradient(circle at center, rgba(43,86,197,0.4), transparent 70%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -27,61 +24,65 @@
   margin: 0 auto;
 }
 
-.skills__title {
-  margin: 0;
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #ff3cac, #784ba0, #2b86c5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.skills__desc {
-  margin-top: 1rem;
-  font-size: 2.125rem;
-  text-align: center;
-  color: #8b949e;
-}
-
-.skills__circle {
-  display: flex;
-  flex-direction: column;
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
   align-items: center;
-  gap: 1.5rem;
+  justify-items: center;
   margin-top: 3rem;
 }
 
-.skills__row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.skills__img-icon {
-  width: 56px;
-  height: 56px;
-}
-
-.skills__img-icon-saga {
-  width: 92px;
-  height: 56px;
-}
-
 .skills__icon {
+  position: relative;
   width: 114px;
   height: 114px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-  font-size: 3.5rem;
   transition: transform 0.3s ease, background 0.3s ease;
-  /* колір задається inline через style */
+  z-index: 1;
+}
+
+/* Uniform icon sizing */
+.skills__icon img,
+.skills__icon svg {
+  width: 56px;
+  height: 56px;
 }
 
 .skills__icon:hover {
   transform: scale(1.2) rotate(-5deg);
-  background: rgba(43,134,197,0.2);
-  /* більше не змінюємо колір самої іконки */
+  background: rgba(43, 134, 197, 0.2);
+}
+
+.skills__tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.skills__icon:hover .skills__tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .skills__grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
 }

@@ -42,8 +42,16 @@ const About = () => {
             Frontend Developer with 4 years of hands-on experience building and maintaining scalable, responsive web
             applications using React, Redux, Next.js, JavaScript, and Material UI. Proven ability to take ownership of
             complex features, improve application architecture, and ship high-quality code in fast-paced environments.
-            Looking for a fully remote opportunity with a dynamic international team where I can grow and make meaningful
-            impact.
+          </p>
+          <p>
+            Today I am more than a frontend developer. Working side by side with AI agents such as Claude Code and
+            Codex, I can take a web product of any kind from idea to production: frontend, backend, integrations,
+            tests, and deployment. I set the direction, break the work down, and review every result, so the speed of
+            agents comes with the quality of an experienced engineer.
+          </p>
+          <p>
+            Looking for a fully remote opportunity with a dynamic international team where I can grow and make
+            meaningful impact.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

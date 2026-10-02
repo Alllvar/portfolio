@@ -8,6 +8,7 @@ import antDesign from "../../assets/ant-design.svg";
 import figma from "../../assets/figma.png";
 import gitlab from "../../assets/gitlab.png";
 import bitbucket from "../../assets/bitbucket.png";
+import claudeLogo from "../../assets/claude.svg";
 import {
   SiReact,
   SiRedux,
@@ -23,9 +24,24 @@ import {
   SiTestinglibrary,
   SiSocketdotio,
   SiGithub,
+  SiOpenai,
 } from "react-icons/si";
+import { TbRobot, TbListCheck, TbGitPullRequest } from "react-icons/tb";
 
 const skillGroups = [
+  {
+    title: "AI-Augmented Development",
+    description:
+      "Coding agents as part of my daily workflow: I plan, delegate, and review, which lets me deliver full web products quickly and to a high standard, well beyond frontend alone.",
+    featured: true,
+    items: [
+      { icon: <img src={claudeLogo} alt="Claude" />, name: "Claude / Claude Code", color: "#d97757" },
+      { icon: <SiOpenai />, name: "OpenAI Codex", color: "#ffffff" },
+      { icon: <TbRobot />, name: "Agentic workflows", color: "#64d7ff" },
+      { icon: <TbListCheck />, name: "Spec-driven development", color: "#a8ffb0" },
+      { icon: <TbGitPullRequest />, name: "AI-assisted code review", color: "#ffad54" },
+    ],
+  },
   {
     title: "Core Frontend",
     description: "Production-ready UI work with modern React patterns, typed code, and scalable state management.",
@@ -84,8 +100,8 @@ const Skills = () => (
     <h5>Core stack & workflow</h5>
     <h2>My Experience</h2>
     <p className="skills__lead container">
-      Tools and technologies I use to build production interfaces: from component-driven frontend architecture
-      to testing, integrations, and team delivery workflows.
+      Tools and technologies I use to build production web products: from AI coding agents and component-driven
+      frontend architecture to testing, integrations, and team delivery workflows.
     </p>
 
     <div className="skills__content container">
@@ -102,11 +118,15 @@ const Skills = () => (
           <strong>React / Next</strong>
           <span>Core product stack</span>
         </div>
+        <div className="skills__stat">
+          <strong>Claude / Codex</strong>
+          <span>AI agent workflow</span>
+        </div>
       </div>
 
       <div className="skills__groups">
         {skillGroups.map((group) => (
-          <article key={group.title} className="skills__group">
+          <article key={group.title} className={`skills__group${group.featured ? " skills__group--featured" : ""}`}>
             <div className="skills__group-head">
               <h3>{group.title}</h3>
               <p>{group.description}</p>

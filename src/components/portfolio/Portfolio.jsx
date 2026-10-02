@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./portfolio.css";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight, FiChevronDown, FiChevronUp } from "react-icons/fi";
 import IMG1 from "../../assets/influencer_hero1.png";
 import IMG2 from "../../assets/buybunk1.png";
 import IMG3 from "../../assets/blib.png";
@@ -15,6 +15,7 @@ import IMG11 from "../../assets/exchange.png";
 import IMG12 from "../../assets/ebtc.png";
 import IMG13 from "../../assets/heyvista.png";
 import IMG14 from "../../assets/merchantstack.png";
+import IMG15 from "../../assets/gou.png";
 
 const portfolioItems = [
   {
@@ -157,9 +158,24 @@ const portfolioItems = [
     stack: ["Dashboard", "Operations", "Product workflows"],
     link: "https://app.merchantstack.net",
   },
+  {
+    id: 15,
+    image: IMG15,
+    title: "GOU",
+    category: "Fashion E-commerce Store",
+    description:
+      "Online store of a Ukrainian clothing brand for women, men, and kids. Provided frontend maintenance and support: catalog and product page fixes, UI improvements, and a smoother shopping flow.",
+    stack: ["E-commerce", "Maintenance & support", "Catalog UI"],
+    link: "https://gou.in.ua/",
+  },
 ];
 
+const INITIAL_VISIBLE = 6;
+
 const Portfolio = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleItems = showAll ? portfolioItems : portfolioItems.slice(0, INITIAL_VISIBLE);
+
   return (
     <section id="portfolio">
       <h5>Selected Work</h5>
@@ -170,7 +186,7 @@ const Portfolio = () => {
       </p>
 
       <div className="container portfolio__container">
-        {portfolioItems.map(({ id, image, title, category, description, stack, link }) => (
+        {visibleItems.map(({ id, image, title, category, description, stack, link }) => (
           <article key={id} className="portfolio__item">
             <div className="portfolio__item-image">
               <span className="portfolio__item-index">{String(id).padStart(2, "0")}</span>
@@ -194,6 +210,15 @@ const Portfolio = () => {
           </article>
         ))}
       </div>
+
+      {portfolioItems.length > INITIAL_VISIBLE && (
+        <div className="portfolio__more">
+          <button type="button" className="btn" aria-expanded={showAll} onClick={() => setShowAll(!showAll)}>
+            {showAll ? "Show less" : "Show more"}
+            {showAll ? <FiChevronUp aria-hidden="true" /> : <FiChevronDown aria-hidden="true" />}
+          </button>
+        </div>
+      )}
     </section>
   );
 };

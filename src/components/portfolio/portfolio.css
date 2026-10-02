@@ -154,6 +154,16 @@
   gap: 0.45rem;
 }
 
+.portfolio__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.25rem;
+}
+
+.portfolio__more .btn {
+  font: inherit;
+}
+
 @media screen and (max-width: 1024px) {
   .portfolio__container {
     grid-template-columns: 1fr 1fr;

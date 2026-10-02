@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d47fec6d.css",
-    "main.js": "/portfolio/static/js/main.6d20be81.js",
+    "main.css": "/portfolio/static/css/main.d5683d7c.css",
+    "main.js": "/portfolio/static/js/main.8e2a8a2e.js",
     "static/media/babykroha.png": "/portfolio/static/media/babykroha.5604123783ea790a3113.png",
+    "static/media/gou.png": "/portfolio/static/media/gou.88b046524414b25b057a.png",
     "static/media/ebtc.png": "/portfolio/static/media/ebtc.2d679af7228306d36491.png",
     "static/media/cv.pdf": "/portfolio/static/media/cv.5b96aacbfd0f73f929e6.pdf",
     "static/media/heyvista.png": "/portfolio/static/media/heyvista.f66878558ee3bfbdf019.png",
@@ -24,13 +25,14 @@
     "static/media/figma.png": "/portfolio/static/media/figma.d6ee3863a2c3debce3a8.png",
     "static/media/ts.png": "/portfolio/static/media/ts.62fa1ef0511c8c4991a4.png",
     "static/media/ant-design.svg": "/portfolio/static/media/ant-design.0aa992f997421683296276fa7b256e94.svg",
+    "static/media/claude.svg": "/portfolio/static/media/claude.1beb62b6013db0f05a50cdccf71cbd9f.svg",
     "static/media/html5.svg": "/portfolio/static/media/html5.65efbef2638205da245f8997a090b79d.svg",
     "index.html": "/portfolio/index.html",
-    "main.d47fec6d.css.map": "/portfolio/static/css/main.d47fec6d.css.map",
-    "main.6d20be81.js.map": "/portfolio/static/js/main.6d20be81.js.map"
+    "main.d5683d7c.css.map": "/portfolio/static/css/main.d5683d7c.css.map",
+    "main.8e2a8a2e.js.map": "/portfolio/static/js/main.8e2a8a2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d47fec6d.css",
-    "static/js/main.6d20be81.js"
+    "static/css/main.d5683d7c.css",
+    "static/js/main.8e2a8a2e.js"
   ]
 }

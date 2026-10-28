@@ -13,6 +13,8 @@ import {
   SiReact,
   SiRedux,
   SiNextdotjs,
+  SiVuedotjs,
+  SiAngular,
   SiStyledcomponents,
   SiBootstrap,
   SiGit,
@@ -53,6 +55,8 @@ const skillGroups = [
       { icon: <SiRedux />, name: "Redux", color: "#9f7aea" },
       { icon: <img src={reduxSaga} alt="Redux-Saga" />, name: "Redux-Saga", color: "#a8ffb0" },
       { icon: <SiNextdotjs />, name: "Next.js", color: "#ffffff" },
+      { icon: <SiVuedotjs />, name: "Vue", color: "#42b883" },
+      { icon: <SiAngular />, name: "Angular", color: "#dd0031" },
     ],
   },
   {
@@ -115,8 +119,8 @@ const Skills = () => (
           <span>Skill clusters</span>
         </div>
         <div className="skills__stat">
-          <strong>React / Next</strong>
-          <span>Core product stack</span>
+          <strong>React / Vue / Angular</strong>
+          <span>Production frameworks</span>
         </div>
         <div className="skills__stat">
           <strong>Claude / Codex</strong>

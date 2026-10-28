@@ -23,13 +23,13 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>4+ Years Working</small>
+              <small>5+ Years Working</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Companies</h5>
-              <small>5 Companies</small>
+              <small>6 Companies</small>
             </article>
 
             <article className="about__card">
@@ -39,8 +39,8 @@ const About = () => {
             </article>
           </div>
           <p>
-            Frontend Developer with 4 years of hands-on experience building and maintaining scalable, responsive web
-            applications using React, Redux, Next.js, JavaScript, and Material UI. Proven ability to take ownership of
+            Product engineer with 5+ years of hands-on experience building and maintaining scalable, responsive web
+            applications with React, Next.js, Vue, and Angular. Proven ability to take ownership of
             complex features, improve application architecture, and ship high-quality code in fast-paced environments.
           </p>
           <p>

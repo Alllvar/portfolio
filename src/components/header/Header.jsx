@@ -11,20 +11,20 @@ const Header = () => {
 
       <div className="container header__container">
         <div className="header__intro">
-          <div className="subtitle">Product Engineer · React / Next.js · AI Agents</div>
+          <div className="subtitle">Full-Stack Developer · MERN · AI Agents</div>
           <h1 className="title">Viktor Martyniuk</h1>
           <p className="text-light tagline">
-            I design, build, and ship complete web products for fintech, SaaS, and e-commerce. Strong frontend
-            engineering paired with AI coding agents like Claude Code and Codex lets me deliver fast without
-            cutting corners on quality.
+            I design, build, and ship complete web products for fintech, SaaS, and e-commerce: React frontends
+            backed by Node.js, Express, and MongoDB APIs. Five years of production React paired with AI coding
+            agents like Claude Code and Codex lets me deliver fast without cutting corners on quality.
           </p>
 
           <div className="header__chips" aria-label="focus areas">
+            <span>MERN stack</span>
+            <span>REST APIs & auth</span>
             <span>AI-assisted delivery</span>
             <span>Product UI</span>
-            <span>Design systems</span>
             <span>Data-heavy dashboards</span>
-            <span>Responsive UX</span>
           </div>
 
           <CTA />

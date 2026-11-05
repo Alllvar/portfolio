@@ -27,6 +27,12 @@ import {
   SiSocketdotio,
   SiGithub,
   SiOpenai,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiDocker,
+  SiGithubactions,
+  SiSwagger,
 } from "react-icons/si";
 import { TbRobot, TbListCheck, TbGitPullRequest } from "react-icons/tb";
 
@@ -57,6 +63,19 @@ const skillGroups = [
       { icon: <SiNextdotjs />, name: "Next.js", color: "#ffffff" },
       { icon: <SiVuedotjs />, name: "Vue", color: "#42b883" },
       { icon: <SiAngular />, name: "Angular", color: "#dd0031" },
+    ],
+  },
+  {
+    title: "Backend & DevOps",
+    description: "REST APIs on the MERN stack: auth, data modeling, aggregation, validation, tests, and deployment.",
+    items: [
+      { icon: <SiNodedotjs />, name: "Node.js", color: "#5FA04E" },
+      { icon: <SiExpress />, name: "Express", color: "#ffffff" },
+      { icon: <SiMongodb />, name: "MongoDB / Mongoose", color: "#47A248" },
+      { icon: <TbListCheck />, name: "JWT auth & Zod", color: "#a8ffb0" },
+      { icon: <SiSwagger />, name: "OpenAPI", color: "#85EA2D" },
+      { icon: <SiDocker />, name: "Docker", color: "#2496ED" },
+      { icon: <SiGithubactions />, name: "GitHub Actions CI", color: "#4f8dff" },
     ],
   },
   {
@@ -105,7 +124,7 @@ const Skills = () => (
     <h2>My Experience</h2>
     <p className="skills__lead container">
       Tools and technologies I use to build production web products: from AI coding agents and component-driven
-      frontend architecture to testing, integrations, and team delivery workflows.
+      frontend architecture to Node.js APIs, testing, integrations, and team delivery workflows.
     </p>
 
     <div className="skills__content container">
@@ -119,8 +138,8 @@ const Skills = () => (
           <span>Skill clusters</span>
         </div>
         <div className="skills__stat">
-          <strong>React / Vue / Angular</strong>
-          <span>Production frameworks</span>
+          <strong>React / Node.js / MongoDB</strong>
+          <span>Full-stack JavaScript</span>
         </div>
         <div className="skills__stat">
           <strong>Claude / Codex</strong>

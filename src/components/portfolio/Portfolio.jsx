@@ -16,10 +16,20 @@ import IMG12 from "../../assets/ebtc.png";
 import IMG13 from "../../assets/heyvista.png";
 import IMG14 from "../../assets/merchantstack.png";
 import IMG15 from "../../assets/gou.png";
+import IMG_CRM from "../../assets/influencer_crm.png";
 
 const portfolioItems = [
   {
-    id: 1,
+    image: IMG_CRM,
+    title: "Influencer CRM",
+    category: "Full-Stack MERN Application",
+    description:
+      "CRM for influencer marketing teams: creators, campaigns, and a drag-and-drop deal pipeline. Express + MongoDB API with JWT refresh token rotation, aggregation-based dashboard, OpenAPI docs, tests, Docker, and CI.",
+    stack: ["MongoDB", "Express", "React", "Node.js", "TypeScript"],
+    link: "https://github.com/Alllvar/influencer-crm",
+    linkLabel: "View code",
+  },
+  {
     image: IMG1,
     title: "Influencer Hero",
     category: "Creator Management Platform",
@@ -29,7 +39,6 @@ const portfolioItems = [
     link: "https://app.influencer-hero.com/influencer_finder",
   },
   {
-    id: 2,
     image: IMG2,
     title: "BuyBank",
     category: "Cryptocurrency Exchange Platform",
@@ -39,7 +48,6 @@ const portfolioItems = [
     link: "https://buybank.io/",
   },
   {
-    id: 3,
     image: IMG3,
     title: "Blib",
     category: "Bulk Ads Upload Tool",
@@ -49,7 +57,6 @@ const portfolioItems = [
     link: "https://alllvar.github.io/blib/",
   },
   {
-    id: 4,
     image: IMG4,
     title: "BabyKroha",
     category: "E-commerce Store",
@@ -59,7 +66,6 @@ const portfolioItems = [
     link: "https://babykroha.ua/",
   },
   {
-    id: 5,
     image: IMG5,
     title: "CoinPointr",
     category: "Crypto Exchange Service",
@@ -69,7 +75,6 @@ const portfolioItems = [
     link: "https://www.coinpointr.com/",
   },
   {
-    id: 6,
     image: IMG6,
     title: "Swapenco",
     category: "Crypto Exchange Website",
@@ -79,7 +84,6 @@ const portfolioItems = [
     link: "https://www.swapenco.com.ua/uk/?typeForm=exchange&from=MONOBUAH&to=USDTTRC20",
   },
   {
-    id: 7,
     image: IMG7,
     title: "Bulldog Exchange",
     category: "Digital Asset Exchange Platform",
@@ -89,7 +93,6 @@ const portfolioItems = [
     link: "https://www.bulldog.exchange/en/",
   },
   {
-    id: 8,
     image: IMG8,
     title: "Barskiy Dvor Obmen",
     category: "Cryptocurrency Exchange Website",
@@ -99,7 +102,6 @@ const portfolioItems = [
     link: "https://www.barskiydvorobmen.com/en/",
   },
   {
-    id: 9,
     image: IMG9,
     title: "Drakkar Exchange",
     category: "Secure Exchange Service",
@@ -109,7 +111,6 @@ const portfolioItems = [
     link: "https://www.drakkar.exchange/en/",
   },
   {
-    id: 10,
     image: IMG10,
     title: "Valuta",
     category: "Exchange & Transfer Service",
@@ -119,7 +120,6 @@ const portfolioItems = [
     link: "https://www.valuta.in.ua/en/",
   },
   {
-    id: 11,
     image: IMG11,
     title: "MW Exchange",
     category: "Fast & Secure Crypto Exchange",
@@ -129,7 +129,6 @@ const portfolioItems = [
     link: "https://www.mw.exchange/uk/",
   },
   {
-    id: 12,
     image: IMG12,
     title: "eBTCpro",
     category: "Cryptocurrency Exchanger",
@@ -139,7 +138,6 @@ const portfolioItems = [
     link: "https://www.ebtc.pro/en/",
   },
   {
-    id: 13,
     image: IMG13,
     title: "HeyVista",
     category: "AI Agents Product Website",
@@ -149,7 +147,6 @@ const portfolioItems = [
     link: "https://www.heyvista.ai/",
   },
   {
-    id: 14,
     image: IMG14,
     title: "MerchantStack",
     category: "Merchant Operations Platform",
@@ -159,7 +156,6 @@ const portfolioItems = [
     link: "https://app.merchantstack.net",
   },
   {
-    id: 15,
     image: IMG15,
     title: "GOU",
     category: "Fashion E-commerce Store",
@@ -181,15 +177,16 @@ const Portfolio = () => {
       <h5>Selected Work</h5>
       <h2>Projects & Product Interfaces</h2>
       <p className="portfolio__lead container">
-        A mix of production fintech products, internal tools, e-commerce solutions, and modern SaaS interfaces.
+        A full-stack MERN application plus a mix of production fintech products, internal tools, e-commerce
+        solutions, and modern SaaS interfaces.
         I focus on clean structure, fast interactions, and conversion-friendly UX.
       </p>
 
       <div className="container portfolio__container">
-        {visibleItems.map(({ id, image, title, category, description, stack, link }) => (
-          <article key={id} className="portfolio__item">
+        {visibleItems.map(({ image, title, category, description, stack, link, linkLabel }, index) => (
+          <article key={title} className="portfolio__item">
             <div className="portfolio__item-image">
-              <span className="portfolio__item-index">{String(id).padStart(2, "0")}</span>
+              <span className="portfolio__item-index">{String(index + 1).padStart(2, "0")}</span>
               <img src={image} alt={`${title} preview`} />
             </div>
             <div className="portfolio__item-content">
@@ -204,7 +201,7 @@ const Portfolio = () => {
             </div>
             <div className="portfolio__item-cta">
               <a className="btn btn-primary" href={link} target="_blank" rel="noreferrer">
-                Open website <FiArrowUpRight aria-hidden="true" />
+                {linkLabel || "Open website"} <FiArrowUpRight aria-hidden="true" />
               </a>
             </div>
           </article>

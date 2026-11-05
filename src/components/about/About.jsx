@@ -39,9 +39,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            Product engineer with 5+ years of hands-on experience building and maintaining scalable, responsive web
-            applications with React, Next.js, Vue, and Angular. Proven ability to take ownership of
-            complex features, improve application architecture, and ship high-quality code in fast-paced environments.
+            Full-stack JavaScript developer with 5+ years of hands-on experience building and maintaining scalable,
+            responsive web applications with React, Next.js, Vue, and Angular, and now building the backend too with
+            Node.js, Express, and MongoDB. Proven ability to take ownership of complex features, improve application
+            architecture, and ship high-quality code in fast-paced environments.
           </p>
           <p>
             Today I am more than a frontend developer. Working side by side with AI agents such as Claude Code and

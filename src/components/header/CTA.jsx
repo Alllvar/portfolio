@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../assets/Viktor_Martyniuk_Frontend_CV.pdf";
+import CV from "../../assets/Viktor_Martyniuk_FullStack_MERN_CV.pdf";
 
 const CTA = () => {
   return (
